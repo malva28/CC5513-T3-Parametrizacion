@@ -36,35 +36,35 @@ Si se desea que estos círculos aparezcan invisibles, se puede proveer del flag 
 
 #### Pesos Uniformes
 
-![three_bunnies](./results/three_bunnies.png)
+![three_bunnies](./results/three_bunnies.PNG)
 
 En la imagen de arriba, se pueden apreciar los resultados de aplicar pesos uniformes, armónicos y valor medio, de izquierda a derecha, al conejo. 
 Las mayores distinciones se aprecian en los pesos uniformes, pues se ve mucho más distorsionado que los últimos dos métodos.
 
-![bunny_uniform_closeup](./results/bunny_uniform_closeup.png)
+![bunny_uniform_closeup](./results/bunny_uniform_closeup.PNG)
 
 Como se observa al hacerle zoom, los pesos uniformes son sensibles a la forma de los triángulos, pues el patrón se ve más estirado sobre los triángulos más alargados
 y más contraído en aquellos de menor área. En general, no es robusto a cambios de curvatura.
 
-![lucy_uniform](./results/lucy_uniform.png)
+![lucy_uniform](./results/lucy_uniform.PNG)
 
 Distorsiones similares se observan en lucy.off
 
-![three_nefertiti](./results/three_nefertiti.png)
+![three_nefertiti](./results/three_nefertiti.PNG)
 
 Aunque incluso en mallas donde hay menores cambios de curvatura, como el de Nefertiti, este método presenta diferencias grandes con los otros dos.
 El patrón se deforma para seguir la dirección de la nariz y no preserva ángulos. El área es inconsistente en los ojos, donde es más grande
 
-![harmonic_uniform_behind](./results/harmonic_uniform_behind.png)
+![harmonic_uniform_behind](./results/harmonic_uniform_behind.PNG)
 
 Tampoco funciona sobre mallas que que tengan triángulos de calidad, como en el caso de la base de la copa de world_cut.off.
 
-![world_barycentric](./results/world_barycentric.png)
+![world_barycentric](./results/world_barycentric.PNG)
 
 Se observa también que la textura se distorsiona y colapsa en un punto. Esto se debe al hoyo creado en sus coordenadas baricéntricas.
 También es interesante notar lo distinta que se ve la triangulación en el mapeo a los otros dos métodos.
 
-![world_harmonic_mesh](./results/world_harmonic_mesh.png)
+![world_harmonic_mesh](./results/world_harmonic_mesh.PNG)
 
 Mientras que los métodos armónico y de valor medio preservan mejor cómo se veía la malla originalmente en su mapeo 2D (como cuadriláteros).
 
